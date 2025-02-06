@@ -8,7 +8,7 @@ const dc=["superman","flash","batman"]
 const allHeros=marvel.concat(dc) // return new array
 console.log(allHeros);
 
-const allnewheros=[...marvel,...dc] // same as concat and most widely used
+const allnewheros=[...marvel,...dc] // same as concat and most widely used and is called spreading methods
 console.log(allnewheros);
 
 
