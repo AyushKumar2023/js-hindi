@@ -1,7 +1,7 @@
 const marvel=["thor", "ironman", "spiderman"]
 const dc=["superman","flash","batman"]
 
-// marvel.push(dc)  // take dc array as single element
+// marvel.push(dc)  // take dc array as single element and push it into marvel array
 // console.log(marvel);
 // console.log(marvel[3][1]);  // not good method
 
