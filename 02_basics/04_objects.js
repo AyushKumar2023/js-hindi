@@ -62,9 +62,38 @@ const users=[
     }
 ]
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser)); // keys of all objects are returned as an array
-console.log(Object.values(tinderUser));  // values of all objects are returned as an array
-console.log(Object.entries(tinderUser));  // give nested array as output
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser)); // keys of all objects are returned as an array
+// console.log(Object.values(tinderUser));  // values of all objects are returned as an array
+// console.log(Object.entries(tinderUser));  // give nested array as output
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+
+
+//  OBJECT IS NECESSARY FOR APIs
+
+
+
+// Destructuring of Objects
+
+const course={
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh"
+}
+
+// course.courseInstructor // instead of doing this multiple time do following syntax
+
+const {courseInstructor: instructor}=course
+console.log(instructor);
+
+
+// In today's world data from APIs calls comes in the form of JSON object
+// JSON structure ( both keys and values are in the form of string )
+
+// {
+//     "name": "ayush",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
