@@ -19,7 +19,10 @@ for (const greet of greetings) {
 
 
 // Maps
-
+const map=new Map()
+map.set("IN", "India")
+map.set("USA", "United States of America")
+map.set("FR", "France")
 
 
 // console.log(map);
