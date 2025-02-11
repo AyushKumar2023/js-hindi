@@ -24,8 +24,8 @@ new Promise(function(resolve, reject){
     setTimeout(function(){
         console.log("async task 2");
         resolve()
-    })
-},1000).then(function(){
+    },1000)
+}).then(function(){
     console.log("promise consumed 2");
     
 })
@@ -104,3 +104,34 @@ async function consumePromiseFive(){
 }
 
 consumePromiseFive()
+
+// async function getAllUsers(){
+    
+//     try{
+//     const response=await fetch("https://jsonplaceholder.typicode.com/users")
+//     const data=await response.json() // it will also take time so await keyword is used
+//     console.log(data);
+//     }catch(error){
+//         console.log("E: ", error);
+        
+//     }
+// }
+
+// getAllUsers()
+
+
+// above function in .then and .catch format 
+
+fetch("https://jsonplaceholder.typicode.com/users")
+.then((response)=>{
+    return response.json() 
+})
+.then((data)=>{
+    console.log(data);
+    
+})
+.catch((error)=>{
+    console.log("E :", error);
+    
+})
+
